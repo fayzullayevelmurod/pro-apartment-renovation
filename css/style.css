@@ -29,7 +29,7 @@ button {
 }
 
 .section-title {
-  width: 70%;
+  width: 850px;
   color: rgb(6, 6, 7);
   font-family: "Roboto";
   font-size: 40px;
@@ -336,6 +336,11 @@ button {
 .heading-card-icons img {
   width: 48px;
   height: 48px;
+  transition: all ease 300ms;
+}
+
+.heading-card-icons img:hover{
+  opacity: 0.8;
 }
 
 
@@ -590,3 +595,279 @@ button {
   letter-spacing: 0%;
   text-align: center;
 }
+
+
+/* SERVISES SECTION */
+.servises {
+  position: relative;
+  background: url("../img/servises-bg-img.png");
+  opacity: 0.9;
+  height: 1020px;
+  padding-top: 56px;
+  padding-bottom: 84px;
+}
+
+.servises::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 255, 255);
+  opacity: 0.9;
+}
+
+.servises .container {
+  position: relative;
+  z-index: 1;
+}
+
+.servises .servises-title {
+  margin-bottom: 23px;
+}
+
+.servises .servises-items {
+  margin-top: 76px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-align: center;
+}
+
+.servises .servises-item {
+  width: 300px;
+  height: 270px;
+  box-sizing: border-box;
+  border: 2px solid rgb(227, 227, 227);
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+  padding: 24px 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.servises .servises-item:nth-child(1),
+.servises .servises-item:nth-child(2),
+.servises .servises-item:nth-child(3) {
+  margin-bottom: 106px;
+}
+
+.servises-item .servises-item-title {
+  color: rgb(6, 6, 7);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.servises-item .servises-item-text {
+  color: rgb(6, 6, 7);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+/* SERVISES SECTION FORM */
+.servises-form {
+  position: relative;
+  background: url("../img/servises-form-bg.png");
+  height: 801px;
+  padding: 110px 0 108px;
+}
+
+.servises-form .servises-person-img {
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.servises-form .container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.servises-text {
+  max-width: 365px;
+}
+
+.servises-text-title {
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 75px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 9px;
+}
+
+.servises-text-subtitle {
+  width: 190px;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 37.5px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 22px;
+}
+
+.servises-ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 21px;
+  margin-left: 23px;
+}
+
+.servises-ul-item {
+  position: relative;
+  max-width: 205px;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.servises-ul-item::before {
+  content: "";
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  top: 5px;
+  left: -23px;
+  border-radius: 11px;
+  background: rgb(254, 163, 34);
+}
+
+/* bu yerdagi forma saytning footer qismida ham ishlaydi */
+.basic-form {
+  border-radius: 10px;
+  padding: 27px 21px 30px 25px;
+  background: rgb(255, 255, 255);
+  max-width: 399px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.basic-form-title {
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+  font-weight: 900;
+  line-height: 37.5px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.basic-form-subtitle {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 41px;
+}
+
+.social-network-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 326px;
+  height: 46px;
+  text-align: center;
+  margin-bottom: 28px;
+
+  color: rgb(22, 227, 50);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26.46px;
+  letter-spacing: 0%;
+  text-align: center;
+
+  box-sizing: border-box;
+  border: 2px solid rgb(22, 227, 50);
+  border-radius: 5px;
+  transition: all ease 300ms;
+}
+
+.social-network-links:hover{
+  background:  rgb(22, 227, 50);
+  color: black;
+}
+
+
+.social-network-links:last-child {
+  color: rgb(0, 179, 255);
+  border: 2px solid rgb(0, 179, 255);
+  margin-bottom: 23px;
+}
+
+.social-network-links:last-child:hover{
+  background: rgb(0, 179, 255) ;
+  color: white;
+}
+
+.basic-form form {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.basic-form form label {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 3px;
+}
+
+
+.basic-form form input {
+  box-sizing: border-box;
+  border: 1px solid rgba(6, 6, 7, 0.15);
+  border-radius: 4px;
+  background: rgb(255, 255, 255);
+  height: 46px;
+  padding: 13px 16px 14px;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  margin-bottom: 20px;
+}
+
+.basic-form form button {
+  border-radius: 5px;
+  background: rgb(255, 216, 136);
+  height: 84px;
+  cursor: pointer;
+
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+
+/* */
