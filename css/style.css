@@ -40,7 +40,15 @@ button {
   margin: 0 auto;
 }
 
-.section-subtitle {}
+.section-subtitle {
+  color: rgb(6, 6, 7);
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 37.5px;
+  letter-spacing: 0%;
+  text-align: center;
+}
 
 
 .main {
@@ -393,6 +401,7 @@ button {
   background: url("../img/cards-section-bg.png");
   padding-top: 31px;
   padding-bottom: 87px;
+  background-size: cover;
 }
 
 .cards-sec .cards-wrap {
@@ -401,12 +410,12 @@ button {
   align-items: center;
   justify-content: space-around;
   padding-top: 56px;
-  padding-bottom: 160px;
+  padding-bottom: 60px;
 }
 
 .cards-wrap .cards-wrap-item {
   width: 450px;
-  height: 560px;
+  padding-bottom: 20px;
   border-radius: 10px;
   margin-bottom: 99px;
   box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.1);
@@ -449,7 +458,7 @@ button {
   text-align: left;
 }
 
-.card-status-item div span{
+.card-status-item div span {
   display: block;
 }
 
@@ -465,6 +474,8 @@ button {
 }
 
 .card-body .card-text {
+  height: 100px;
+  width: 320px;
   margin-left: 18px;
   margin-bottom: 20px;
   color: rgb(6, 6, 7);
@@ -484,4 +495,98 @@ button {
   text-align: left;
   text-decoration-line: underline;
   margin-left: 20px;
+}
+
+/* renavation-form */
+.renavation-form {
+  position: relative;
+  background: url("../img/form-bg-img.png");
+  height: 354px;
+  max-width: 1048px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 28px;
+  /* background: red; */
+}
+
+
+.renavation-form .phoneimg-form {
+  position: absolute;
+  left: -150px;
+  bottom: -20px;
+}
+
+.renavation-form .renavation-form-title {
+  color: white;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.renavation-form .renavation-form-subtitle {
+  color: rgb(255, 255, 255);
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.renavation-form form {
+  position: relative;
+  z-index: 2;
+  width: 800px;
+  margin: 46px auto;
+  color: white;
+  display: flex;
+  align-items: self-end;
+  justify-content: space-between;
+  gap: 9px;
+}
+
+
+.renavation-form .form-item {
+  max-width: 277px;
+}
+
+.renavation-form .form-item label {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 6px;
+  margin-left: 7px;
+}
+
+
+.renavation-form .form-item input {
+  padding: 13px 16px 14px;
+  width: 277px;
+  box-sizing: border-box;
+  border: 1px solid rgba(6, 6, 7, 0.15);
+  border-radius: 4px;
+  background: rgb(255, 255, 255);
+  color: black;
+
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0%;
+}
+
+.renavation-form .renavation-form-btn {
+  flex-basis: 255px;
+  height: 46px;
+  border-radius: 5px;
+  background: rgb(255, 216, 136);
+  cursor: pointer;
+
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 20.4px;
+  letter-spacing: 0%;
+  text-align: center;
 }
