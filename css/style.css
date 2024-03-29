@@ -1,10 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
 }
 
-.container{
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  outline: none;
+  border: none;
+  background: inherit;
+  color: inherit;
+}
+
+.container {
   max-width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main {
+  background: url("../img/main-img-bg.png");
+  height: 800px;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  object-fit: cover;
+}
+
+/* header */
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo{
+  margin-top: 5px;
+  margin-right:20px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 7;
+}
+
+.header-nav .header-title {
+  flex-basis: 207px;
+  color: rgb(255, 255, 255);
+  /* font-family: Roboto; */
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+/*header-social-media  */
+.header-social-media {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-social-media img {
+  width: 40px;
+  height: 40px;
+  transition: all ease 500ms;
+}
+
+
+.header-social-media img:hover {
+  transform: scale(1.2);
+}
+
+
+/* header-contact */
+.header-contact {
+  max-width: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.header-contact .contact-phone {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.contact-phone a {
+  color: rgb(255, 255, 255);
+  /* font-family: Roboto; */
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 37.5px;
+  letter-spacing: 0%;
+  text-align: right;
+  text-decoration-line: underline;
+  position: relative;
+  margin-bottom: 4px;
+  transition: all ease 500ms;
+}
+
+.contact-phone a:hover {
+  opacity: 0.7;
+  text-decoration-line: none;
+}
+
+
+.contact-phone a::before {
+  content: "";
+  position: absolute;
+  left: -24px;
+  top: 40%;
+  width: 8px;
+  height: 8px;
+  border-radius: 50px;
+  background: rgb(105, 240, 135);
+}
+
+.contact-phone span {
+  color: rgb(255, 255, 255);
+  /* font-family: Roboto; */
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-align: right;
+}
+
+.contact-btn {
+  cursor: pointer;
+  width: 196.83px;
+  height: 46.45px;
+  color: rgb(255, 216, 136);
+  /* font-family: Roboto; */
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26.46px;
+  letter-spacing: 0%;
+  text-align: center;
+  box-sizing: border-box;
+  border: 2px solid rgb(255, 216, 136);
+  border-radius: 10px;
+  transition: all ease 500ms;
+}
+
+.contact-btn:hover {
+  background: rgb(255, 216, 136);
+  color: black;
 }
