@@ -15,6 +15,10 @@
 
   <!-- style link -->
   <link rel="stylesheet icon" type="text/css" href="css/style.css" media="screen">
+
+  <!-- fontsawesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
@@ -51,13 +55,14 @@
           </div>
 
           <button class="mobile-btn">
-            <img src="img/navbar-btn.svg" alt="">
+            <i class="fa-solid fa-bars" id="menu-bar"></i>
+            <i class="fa-solid fa-xmark" id="x-mark" style="color: #fff;"></i>
           </button>
 
         </div>
       </header>
 
-       <div class="heading-sec">
+      <div class="heading-sec">
         <div class="container">
 
           <div class="heading-top">
@@ -141,13 +146,13 @@
               <a href="#"><img src="img/whatsapp.png" alt=""></a>
             </div>
           </div>
-          
+
 
         </div>
       </div>
 
     </section>
-    
+
     <section class="cards-sec">
       <div class="container">
         <div class="section-title">
@@ -363,7 +368,7 @@
 
       </div>
     </section>
-    
+
     <section class="servises">
       <div class="container">
         <div class="section-title servises-title">
@@ -430,10 +435,10 @@
 
         </div>
       </div>
-    </section> 
-    
+    </section>
+
     <section class="servises-form">
-      <div  class="servises-person-img"></div>
+      <div class="servises-person-img"></div>
 
       <div class="container">
         <div class="servises-text">
@@ -487,7 +492,7 @@
         </div>
       </div>
     </section>
-    
+
     <section class="design-sec">
       <div class="container">
         <div class="section-title">
@@ -517,10 +522,17 @@
           </button>
         </div>
         <div class="section-title"><b>Предлагаем 3 пакетных решения:</b></div>
+
         <div class="design-blanks">
-          <div class="design-blanks-item"></div>
-          <div class="design-blanks-item"></div>
-          <div class="design-blanks-item"></div>
+          <div class="design-blanks-item">
+            <img src="img/card-img-1.png" alt="">
+          </div>
+          <div class="design-blanks-item">
+            <img src="img/card-img-2.png" alt="">
+          </div>
+          <div class="design-blanks-item">
+            <img src="img/card-img-3.png" alt="">
+          </div>
 
         </div>
         <div class="section-title"><b>Простой алгоритм работы</b></div>
@@ -563,8 +575,91 @@
         <div class="section-title"> <b>Ответы</b> на часто задаваемые вопросы</div>
 
         <div class="answers">
-          <div class="answers-item"></div>
-          <div class="answers-item"></div>
+          <div class="answers-item">
+            <div class="accordion">
+              <div class="accordion-item">
+                <div class="accordion-item-header">
+                  What is Web Development?
+                </div><!-- /.accordion-item-header -->
+                <div class="accordion-item-body">
+                  <div class="accordion-item-body-content">
+                    Ремонт квартиры чаще всего начинается с подготовительных или демонтажных работ. Вы всегда можете
+                    оставить заявку на сайте и мы подробно расскажем вам, с чего лучше начинать ремонт квартиры
+                  </div>
+                </div><!-- /.accordion-item-body -->
+              </div><!-- /.accordion-item -->
+
+              <div class="accordion-item">
+                <div class="accordion-item-header">
+                  С чего лучше начать ремонт?
+                </div><!-- /.accordion-item-header -->
+                <div class="accordion-item-body">
+                  <div class="accordion-item-body-content">
+                    В зависимости от площади Вашего объекта, объёма и сложности работ – сроки ремонта начинаются от 1
+                    месяца. К примеру, капитальный ремонт двух-трёх комнатной квартиры в среднем занимает 2-3
+                    месяца.curity configuration, among other tasks.
+                  </div>
+                </div><!-- /.accordion-item-body -->
+              </div><!-- /.accordion-item -->
+
+              <div class="accordion-item">
+                <div class="accordion-item-header">
+                  Как быстро вы сможете начать работу?
+                </div><!-- /.accordion-item-header -->
+                <div class="accordion-item-body">
+                  <div class="accordion-item-body-content">
+                    После проведения замеров, согласования условий и стоимости работ – мы готовы приступить к работам в
+                    течение недели</div>
+                </div><!-- /.accordion-item-body -->
+              </div><!-- /.accordion-item -->
+            </div>
+          </div>
+
+          <div class="answers-item">
+            <div class="accordion">
+              <div class="accordion-item">
+                <div class="accordion-item-header">
+                  Какие чистовые материалы выбрать?
+                </div><!-- /.accordion-item-header -->
+                <div class="accordion-item-body">
+                  <div class="accordion-item-body-content">
+
+                    Какие чистовые материалы выбрать?
+
+                    Такие материалы, как - плитка, обои, напольные покрытия (ламинат, паркет, инженерная доска и пр.)
+                    выбираются или заказчиком, или дизайнером (по согласованию, в случае если разрабатывается дизайн
+                    проект). Мы можем порекомендовать наших партнёров поставщиков чистовых материалов с хорошими
+                    условиями и скидками
+                  </div>
+                </div><!-- /.accordion-item-body -->
+              </div><!-- /.accordion-item -->
+
+              <div class="accordion-item">
+                <div class="accordion-item-header">
+                  Можно заказать ремонт и дизайн-проект?
+                </div><!-- /.accordion-item-header -->
+                <div class="accordion-item-body">
+                  <div class="accordion-item-body-content">
+                    Да, мы так же занимаемся разработкой фирменных дизайн проектов, сопровождаем и выполняем работы
+                    согласно инструкциям. Для получения более подробной информации по поводу дизайн проекта, оставляйте
+                    заявку или обращайтесь по номерам
+                  </div>
+                </div><!-- /.accordion-item-body -->
+              </div><!-- /.accordion-item -->
+
+              <div class="accordion-item">
+                <div class="accordion-item-header">
+                  Как происходит оплата работ?
+                </div><!-- /.accordion-item-header -->
+                <div class="accordion-item-body">
+                  <div class="accordion-item-body-content">
+                    Оплата работ происходит по факту окончания каждого из этапов работ, определённых заранее и
+                    прописанных в договоре. Оплата происходит после подписания акта выполненных работ
+                  </div>
+                </div><!-- /.accordion-item-body -->
+              </div><!-- /.accordion-item -->
+            </div>
+          </div>
         </div>
 
         <div class="recent-photos-title section-title"><b>Фото последних выполненных ремонтов</b></div>
@@ -587,11 +682,11 @@
           <div class="recent-photos-item">
             <img src="img/photos-4.png" alt="">
           </div>
-        
+
           <div class="recent-photos-item">
             <img src="img/photos-5.png" alt="">
           </div>
-        
+
           <div class="recent-photos-item">
             <img src="img/photos-6.png" alt="">
           </div>
@@ -620,10 +715,10 @@
             <img src="img/photos-12.png" alt="">
           </div>
         </div>
-        
+
       </div>
-    </section> 
-    <!-- 
+    </section>
+
     <section class="footer-form">
       <img src="img/footer-img-phone.png" alt="" class="footer-phone-img">
 
@@ -664,10 +759,12 @@
 
         </div>
       </div>
-    </section> -->
+    </section>
 
   </div>
 
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/solid.min.js" integrity="sha512-+fI924YJzeYFv7M0R29zJvRThPinSUOAmo5rpR9v6G4eWIbva/prHdZGSPN440vuf781/sOd/Fr+5ey0pqdW9w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <!-- app.js -->
   <script src="js/app.js"></script>
