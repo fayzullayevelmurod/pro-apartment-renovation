@@ -1254,7 +1254,7 @@ section {}
 
 
 /* Modal Page */
-.modal-pege {
+/* .modal-pege {
   position: absolute;
   z-index: 99999;
   top: 0;
@@ -1276,7 +1276,7 @@ section {}
   background: #fff;
   border-radius: 10px;
   padding: 35px 25px;
-}
+} */
 
 /* media */
 @media (max-width:1200px) {
