@@ -475,6 +475,8 @@ button {
 
 }
 
+
+
 .card-status .card-status-item {
   display: flex;
   align-items: center;
@@ -829,9 +831,11 @@ section {}
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0%;
-  text-align: left;
+  text-align: center;
   margin-bottom: 41px;
+  width: 100%;
 }
+
 
 .social-network-links {
   display: flex;
@@ -1372,6 +1376,7 @@ section {}
   }
 
   .main {
+
     height: 900px;
   }
 
@@ -1420,6 +1425,9 @@ section {}
   }
 
   .main {
+    background: url("../img/main-img-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 1631px;
   }
 
@@ -1457,6 +1465,12 @@ section {}
 
   .header-contact {
     flex-direction: column;
+    align-items: start;
+  }
+
+  .header-contact .contact-phone{
+    align-items: start;
+    margin-left: 25px;
   }
 
   .heading-top {
@@ -1481,7 +1495,7 @@ section {}
 
   .cards-sec {
     background: transparent;
-    padding: 73px 0 80px;
+    padding: 73px 0 0px;
     height: auto;
   }
 
@@ -1802,6 +1816,10 @@ section {}
     align-items: center;
   }
 
+  .header-nav .header-title {
+    flex-basis: auto;
+    width: 100%;
+  }
 
   .heading-text .heading-title {
     font-size: 34px;
@@ -1877,5 +1895,17 @@ section {}
     height: 103px;
   }
 
+  /* 
+  .card-status {
+    display: flex;
+    background: red;
+    justify-content: space-evenly;
+    align-items: center;
+  } */
+
+  .card-status .card-status-item {
+    flex-direction: column;
+    align-items: center;
+  }
 
 }
