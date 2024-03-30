@@ -20,13 +20,13 @@ mobileClose.addEventListener("click", () => {
 }
 )
 
-xMark.classList.remove('fa-xmark')
+xMark.classList.remove('x-close')
 
 
 menuBar.addEventListener('click', () => {
   headerNav.classList.add('opacity');
   menuBar.classList.remove("fa-bars");
-  xMark.classList.add("fa-xmark");
+  xMark.classList.add("x-close");
   body.style.overflow = "hidden";
 })
 
@@ -34,7 +34,7 @@ menuBar.addEventListener('click', () => {
 xMark.addEventListener('click', () => {
   headerNav.classList.remove('opacity');
   menuBar.classList.add("fa-bars");
-  xMark.classList.remove("fa-xmark");
+  xMark.classList.remove("x-close");
   body.style.overflow = "auto";
 })
 
