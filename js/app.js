@@ -53,3 +53,7 @@ accordionItemHeaders.forEach(accordionItemHeader => {
 
   });
 });
+
+
+// Light galery
+lightGallery(document.getElementById('lightgallery'));
