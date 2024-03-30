@@ -1919,17 +1919,9 @@ section {}
 
 
   .recent-photos-item {
-    width: 165px;
+    width: 46%;
     height: 103px;
   }
-
-  /* 
-  .card-status {
-    display: flex;
-    background: red;
-    justify-content: space-evenly;
-    align-items: center;
-  } */
 
   .card-status .card-status-item {
     flex-direction: column;
