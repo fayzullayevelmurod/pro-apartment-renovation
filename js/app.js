@@ -55,5 +55,52 @@ accordionItemHeaders.forEach(accordionItemHeader => {
 });
 
 
+// Thanks modal open
+const modalOpen = document.querySelectorAll(".thanks-open");
+const modalClose = document.querySelector(".thanks-cloce");
+const thankModal = document.querySelector(".thanks-modal");
+const thankModalBg = document.querySelector(".thanks-modal-bg");
+
+modalOpen.forEach(tab => {
+  tab.addEventListener("click", e => {
+    thankModal.classList.toggle("active");
+    modalPege.classList.remove('z-index');
+  });
+})
+modalClose.addEventListener("click", event => {
+  thankModal.classList.remove("active");
+});
+thankModalBg.addEventListener("click", event => {
+  thankModal.classList.remove("active");
+});
+
+
+const proectShow = document.querySelectorAll(".proectShow");
+const proectOpen = document.querySelectorAll(".proect-open");
+const proectClose = document.querySelector(".proect-cloce");
+const proectModal = document.querySelector(".proect-modal");
+const proectModalBg = document.querySelector(".proect-modal-bg");
+
+proectOpen.forEach(tab => {
+  tab.addEventListener("click", e => {
+    thankModal.classList.toggle("active");
+    proectModal.classList.remove("active");
+  });
+})
+
+proectShow.forEach(tab => {
+  tab.addEventListener("click", e => {
+    proectModal.classList.toggle("active");
+  });
+})
+proectClose.addEventListener("click", event => {
+  proectModal.classList.remove("active");
+});
+proectModalBg.addEventListener("click", event => {
+  proectModal.classList.remove("active");
+});
+
+
+
 // Light galery
 lightGallery(document.getElementById('lightgallery'));

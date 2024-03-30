@@ -1113,7 +1113,12 @@ section {}
 .design-card-item:nth-child(3) {
   padding-bottom: 0;
 }
-
+.design-card-item p{
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: rgba(6, 6, 7, 1);
+}
 /* answers */
 .answers {
   display: flex;
@@ -1272,6 +1277,11 @@ section {}
   text-align: left;
 }
 
+.footer-form .basic-form-title{
+  font-size: 40px;
+  line-height: 60px;
+}
+
 
 
 /* Modal Page */
@@ -1293,7 +1303,7 @@ section {}
 }
 
 .z-index {
-  z-index: 9999;
+  z-index: 8;
   opacity: 1;
   pointer-events: all;
 }
@@ -1321,15 +1331,16 @@ section {}
 }
 
 
-.modal-card form label {
+.form-modal label {
   display: block;
   text-align: left;
   font-size: 1rem;
   font-weight: 500;
+  color: #060607;
 }
 
-.modal-card form input {
-  width: 280px;
+.form-modal input {
+  width: 100%;
   height: 39px;
   padding: 3px 15px 2px;
   border: solid 1px rgb(6, 6, 7, .15);
@@ -1339,7 +1350,7 @@ section {}
 }
 
 
-.modal-card form button {
+.form-modal button {
   border-radius: 5px;
   background: #1b1b1b;
   color: #fff;
@@ -1347,8 +1358,7 @@ section {}
   font-weight: 500;
   line-height: 1.2rem;
   padding: 12px 22px;
-  width: 276px;
-  /* margin-bottom: 320px; */
+  width: 100%;
 }
 
 .modal-social-media {
@@ -1390,6 +1400,112 @@ section {}
 .modal-social-media img:hover {
   cursor: pointer;
   transform: scale(1.2);
+}
+
+/* Project modal */
+.proect-modal{
+  gap: 0 !important;
+  z-index: 8;
+}
+.proect-modal .proect-modal-socicial{
+  margin-top: 45px;
+}
+
+/* Thanks modal */
+.proect-open{
+  cursor: pointer;
+}
+.thanks-modal,
+.proect-modal{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  padding: 40px;
+  color: #FFF;
+  background: #fff;
+  border-radius: 10px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 45px;
+  transition: .3s ease all;
+}
+.proect-modal.active,
+.thanks-modal.active{
+  opacity: 1;
+  pointer-events: all;
+}
+.proect-modal.active+.proect-modal-bg,
+.thanks-modal.active+.thanks-modal-bg{
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  background: #111111ad;
+  width: 100%;
+  height: 100vh;
+}
+.proect-modal .proect-cloce,
+.thanks-modal .thanks-cloce{
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+.proect-modal .proect-modal-content,
+.thanks-modal .thanks-modal-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.proect-modal .proect-modal-title,
+.thanks-modal .thanks-modal-title{
+  font-size: 1.875rem;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #060607;
+  text-align: center;
+}
+.proect-modal .proect-modal-text,
+.thanks-modal .thanks-modal-text{
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #060607;
+  text-align: center;
+}
+.proect-modal .proect-modal-socicial,
+.thanks-modal .thanks-modal-socicial{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.proect-modal .proect-modal-socicial span,
+.thanks-modal .thanks-modal-socicial span{
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+  text-align: center;
+  color: #060607;
+}
+.proect-modal-socicial .modal-socicial-links,
+.thanks-modal-socicial .modal-socicial-links{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.proect-modal-socicial .modal-socicial-links img,
+.thanks-modal-socicial .modal-socicial-link img{
+  width: 40px;
+  height: 40px;
 }
 
 
