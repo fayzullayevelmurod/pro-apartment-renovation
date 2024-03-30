@@ -1,7 +1,21 @@
 
 const menuBar = document.querySelector("#menu-bar"),
-headerNav = document.querySelector(".header-nav"),
-xMark = document.querySelector("#x-mark") ;
+  headerNav = document.querySelector(".header-nav"),
+  xMark = document.querySelector("#x-mark"),
+  mobileClose = document.querySelector(".mobile-close"),
+  contactBtn = document.querySelectorAll(".modalShouBtn"),
+  modalPege = document.querySelector(".modal-pege");
+
+contactBtn.forEach(e => {
+  e.addEventListener('click', () => {
+    modalPege.classList.add("z-index")
+  })
+})
+
+mobileClose.addEventListener("click", () => {
+  modalPege.classList.remove("z-index");
+}
+)
 
 xMark.classList.remove('fa-xmark')
 

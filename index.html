@@ -50,7 +50,7 @@
                 <a href="tel:8 (925) 313-75-89">8 (925) 313-75-89</a>
                 <span>Сейчас работаем - звоните</span>
               </div>
-              <button class="contact-btn">
+              <button class="contact-btn modalShouBtn">
                 Вам перезвонить?
               </button>
             </div>
@@ -83,7 +83,7 @@
               </div>
 
               <div class="heading-btn-wrap">
-                <button class="heading-btn">Узнать стоимость ремонта</button>
+                <button class="heading-btn modalShouBtn">Узнать стоимость ремонта</button>
                 <div class="heading-btn-text">
                   Ответьте на 5 вопросов и
                   получите расчет стоимости
@@ -519,7 +519,7 @@
             под вашу квартиру
           </div>
 
-          <button class="catalog-btn">
+          <button class="catalog-btn modalShouBtn">
             Получить каталог
           </button>
         </div>
@@ -530,19 +530,20 @@
             <img src="img/card-img-1.png" alt="">
             <div class="design-blanks-item-body">
               <div class="design-blnks-title">Косметический</div>
-              <div class="design-blnks-subtitle">Данный пакет подходит тем, кто хочет получить обновление внешнего вида помещения</div>
-              <div class="design-blanks-btn">Узнать подробнее</div>
+              <div class="design-blnks-subtitle">Данный пакет подходит тем, кто хочет получить обновление внешнего вида
+                помещения</div>
+              <div class="design-blanks-btn modalShouBtn">Узнать подробнее</div>
             </div>
           </div>
 
-           <div class="design-blanks-item">
+          <div class="design-blanks-item">
             <img src="img/card-img-2.png" alt="">
             <div class="design-blanks-item-body">
               <div class="design-blnks-title">Капитальный</div>
               <div class="design-blnks-subtitle">
-                Данный пакет подходит тем, кто хочет кардинальные изменение помещения  
+                Данный пакет подходит тем, кто хочет кардинальные изменение помещения
               </div>
-              <div class="design-blanks-btn">Узнать подробнее</div>
+              <div class="design-blanks-btn modalShouBtn">Узнать подробнее</div>
             </div>
           </div>
           <div class="design-blanks-item">
@@ -552,7 +553,7 @@
               <div class="design-blnks-subtitle">
                 Данный пакет подходит тем, кто получить эксклюзивный дизайн, архитектурные решения
               </div>
-              <div class="design-blanks-btn">Узнать подробнее</div>
+              <div class="design-blanks-btn modalShouBtn">Узнать подробнее</div>
             </div>
           </div>
         </div>
@@ -600,7 +601,8 @@
             <div class="accordion">
               <div class="accordion-item">
                 <div class="accordion-item-header">
-                  What is Web Development?
+                  <i class="fa-solid fa-q"></i>
+                  <span>What is Web Development?</span>
                 </div><!-- /.accordion-item-header -->
                 <div class="accordion-item-body">
                   <div class="accordion-item-body-content">
@@ -612,7 +614,10 @@
 
               <div class="accordion-item">
                 <div class="accordion-item-header">
-                  С чего лучше начать ремонт?
+                  <i class="fa-solid fa-q"></i>
+                  <span>
+                    С чего лучше начать ремонт?
+                  </span>
                 </div><!-- /.accordion-item-header -->
                 <div class="accordion-item-body">
                   <div class="accordion-item-body-content">
@@ -625,7 +630,10 @@
 
               <div class="accordion-item">
                 <div class="accordion-item-header">
-                  Как быстро вы сможете начать работу?
+                  <i class="fa-solid fa-q"></i>
+                  <span>
+                    Как быстро вы сможете начать работу?
+                  </span>
                 </div><!-- /.accordion-item-header -->
                 <div class="accordion-item-body">
                   <div class="accordion-item-body-content">
@@ -640,7 +648,10 @@
             <div class="accordion">
               <div class="accordion-item">
                 <div class="accordion-item-header">
-                  Какие чистовые материалы выбрать?
+                  <i class="fa-solid fa-q"></i>
+                  <span>
+                    Какие чистовые материалы выбрать?
+                  </span>
                 </div><!-- /.accordion-item-header -->
                 <div class="accordion-item-body">
                   <div class="accordion-item-body-content">
@@ -657,7 +668,10 @@
 
               <div class="accordion-item">
                 <div class="accordion-item-header">
-                  Можно заказать ремонт и дизайн-проект?
+                  <i class="fa-solid fa-q"></i>
+                  <span>
+                    Можно заказать ремонт и дизайн-проект?
+                  </span>
                 </div><!-- /.accordion-item-header -->
                 <div class="accordion-item-body">
                   <div class="accordion-item-body-content">
@@ -670,7 +684,10 @@
 
               <div class="accordion-item">
                 <div class="accordion-item-header">
-                  Как происходит оплата работ?
+                  <i class="fa-solid fa-q"></i>
+                  <span>
+                    Как происходит оплата работ?
+                  </span>
                 </div><!-- /.accordion-item-header -->
                 <div class="accordion-item-body">
                   <div class="accordion-item-body-content">
@@ -784,10 +801,32 @@
 
     <div class="modal-pege">
       <div class="modal-card">
-        <div class="modal-title">Получить
-          смету на ремонт</div>
-        <div class="modal-subtitle">Запросить смету
-          в Telegram или WhatsApp</div>
+        <i class="fa-solid fa-xmark mobile-close" style="color: #201c1c;"></i>
+        <div class="modal-title">
+          Получить
+          <br>
+          смету на ремонт
+        </div>
+        <div class="modal-subtitle">
+          Запросить смету
+          в Telegram или WhatsApp
+        </div>
+        <div class="modal-social-media">
+          <a href="#"><img src="img/telegram.png" alt=""></a>
+          <a href="#"><img src="img/whatsapp.png" alt=""></a>
+        </div>
+        <div class="modal-subtitle">
+          Или введите ваши данные ниже для получения сметы и скидки в 5%
+        </div>
+        <form action="">
+          <label for="">*Телефон</label>
+          <input type="tel">
+          <button><b>Получить бесплатно </b></button>
+        </form>
+        <div class="modal-social-media">
+          <a href="#"><img src="img/whatsapp.png" alt=""></a>
+          <span class="modal-subtitle">Написать в WhatsApp</span>
+        </div>
       </div>
     </div>
 
